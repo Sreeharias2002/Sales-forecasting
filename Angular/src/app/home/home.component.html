@@ -1,0 +1,60 @@
+
+
+<body>
+	<button class="logout-button" (click)="logout()">Logout</button>
+	<div class="back">
+		<div class="container">
+			<div class="split left">
+				<div class="centered introsection">
+					
+					<img src="../../assets/forecast.jpeg" alt="Background" class="forecastImg"/>
+
+					<div>
+						<p>Sales forecasting is the process of estimating future revenue by predicting the amount of product or services a sales
+						unit (which can be an individual salesperson, a sales team, or a company) will sell in the next week, month, quarter, or
+						year.
+							</p>
+							<p>
+						This project can predict future sales based on the data you provide. You can upload the dataset.
+
+						You dataset should defentiely contain the following columns:
+						
+					</p>
+					<ul>
+						<li>Date</li>
+						<li>SalesPrice</li>
+					</ul>
+					
+					</div>
+				</div>
+			</div>
+			<div class="split right">
+				<div class="centered">
+					
+					<form #inputFile (ngSubmit)="postFile(inputFile)">
+						<div class="form-group">
+							<ngx-dropzone accept="text/csv" (change)="onSelect($event)">
+								<ngx-dropzone-label>Upload CSV<img class="UploadIcon" src="../../assets/upload-solid.svg" alt="Upload"/></ngx-dropzone-label>
+								<ngx-dropzone-preview *ngFor="let f of files" [removable]="true"
+									(removed)="onRemove(f)">
+									<ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+								</ngx-dropzone-preview>
+							</ngx-dropzone>
+						</div>
+						<div class="form-group">
+							<label for="periodicity">Periodicity:</label>
+							<select class="form-control" id="periodicity" name="periodicity" [(ngModel)]="selectedPeriodicity">
+							  <option value="weekly">Weekly</option>
+							  <option value="monthly">Monthly</option>
+							  <option value="yearly">Yearly</option>
+							</select>
+						  </div>
+						<pre></pre>
+
+						<button class="btn btn-dark" type="submit">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>

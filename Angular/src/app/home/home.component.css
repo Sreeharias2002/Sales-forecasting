@@ -1,0 +1,124 @@
+body {
+    /* background-image:url("../../assets/content.svg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center; 
+    height: 100vh;  */
+/* background: rgb(191, 0, 187);
+    background: linear-gradient(90deg, rgba(191, 0, 187, 1) 0%, rgba(162, 0, 255, 1) 100%);
+ */
+    font-family: 'Alkalami', serif;
+
+}
+
+.back {
+    /* background-image: url("../../assets/forecast.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* background-position: center center;  */
+    height: 100vh;
+    /* background-position: right; */
+    right: 0;
+    width: 65vw;
+    background: rgb(191, 0, 187);
+    background: linear-gradient(90deg, rgba(191, 0, 187, 1) 0%, rgba(162, 0, 255, 1) 100%);
+    width: 100%;
+    color: white;
+}
+
+.container {
+    padding: 20px;
+    font-size: 18px;
+
+}
+
+form {
+    /* padding: 20px;
+    font-size: 18px; */
+    /* background-color: rgba(41, 41, 41, 0.4); */
+    /* border-radius: 5px;  */
+    width: 100%;
+    height: 40%;
+}
+
+.input-card {
+    padding: 3rem;
+    color: black;
+    margin-left: 360px;
+    margin-top: 100px;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+    color: black;
+}
+
+.right {
+    right: 0;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white;
+    width: 70%;
+
+}
+
+.forecastImg{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.introsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.introsection div{
+    margin-top: 20px;
+}
+
+.btn-dark{
+    margin-left: 220px;
+    background-color: rgba(162, 0, 255, 1);
+    border: 3px solid rgb(246, 246, 246,0.5);
+    padding: 20px 15px;
+    border-radius: 20px;
+}
+
+.UploadIcon{
+    width: 6%;
+    height: 6%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.logout-button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px 30px;
+    color: white;
+
+    background-color: rgba(162, 0, 255, 1);
+        border: 3px solid rgb(246, 246, 246, 0.5);
+        padding: 15px 10px;
+        border-radius: 20px;
+}
